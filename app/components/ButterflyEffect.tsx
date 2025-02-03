@@ -606,6 +606,7 @@ const FinancialButterflyEffect = () => {
                     const analyses = generateTimeSeriesParameters();
                     setMarkerData(analyses);
                     startTimeline();
+                    setIsLoading(false);
                   }}
                   disabled={isLoading}
                   className="relative flex items-center justify-center gap-2"
